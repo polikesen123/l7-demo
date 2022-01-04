@@ -1,14 +1,17 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="Welcome to Your Vue.js App" v-if="false"/>
+  <MyChart></MyChart>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import MyChart from './components/MyChart.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    MyChart
   }
 }
 </script>
